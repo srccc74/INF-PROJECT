@@ -1,0 +1,95 @@
+body{
+    background-color: #F5F5F5;
+}
+nav{
+    background-color: white !important;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 30px;
+}
+.row{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+footer{
+    text-align: center;
+    background-color: white !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #EAEAEA;
+}
+a{
+    color: black ;
+}
+aside a:hover{
+    color: #1073BB;
+    text-decoration: none;
+}
+.menu-level-1{
+    font-weight: bold;
+}
+.menu-level-2{
+    font-weight: normal;
+    margin-top: 10px;
+}
+.menu-item{
+    padding: 7px;
+}
+.border-menu-item{
+    border-top: 1px dotted #DDDDDD;
+    border-bottom: 1px dotted #DDDDDD;
+}
+.menu-item-theme{
+    margin-bottom: 10px;
+}
+.navbar-brad{
+    font-size: 24px;
+}
+button{
+    float: right;
+    margin: 20px;
+    margin-top: 30px;
+}
+.main-text{
+    padding: 30px;
+}
+.row{
+    padding-right: 30px;
+    padding-left:30px;
+}
+.section-main{
+    background-color: white !important;
+    padding: 15px !important    ;
+    border: 1px solid #EAEAEA;
+    
+}
+input{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+iframe{
+    pointer-events: none;
+}
+h1{
+    margin-bottom: 50px;
+}
+
+.img-logo{
+    margin-right: 20px;
+}
+.system-style{
+    width: 40px;
+}
+@media screen and (min-width:481px) {
+    .no-cloak{
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    .counter{
+        display: none;
+    }
+}
+
+.no-cloak{
+    color: red;
+}

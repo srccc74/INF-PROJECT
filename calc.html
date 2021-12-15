@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информатика</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brad">Информатика на 100 баллов<img src=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">Теория</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nums.html">Задания</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="">Полезное</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 col-sm-4">
+                <div id="block-categories" class="block block-custom-main.block-categories-menu">
+                    <div class="content">
+                        <ul class="menu-level-1">
+                            <li class="menu-item menu-item-6">
+                                <a href="" class="menu-item-theme">Калькулятор систем счиления</a>
+                                
+                            </li>
+                        </ul>
+                        <ul class="menu-level-1">
+                            <li class="menu-item menu-item-6">
+                                <a href="" class="menu-item-theme">Построить таблицу истинности</a>
+                                
+                            </li>
+                        </ul>
+                        <ul class="menu-level-1">
+                            <li class="menu-item menu-item-6">
+                                <a href="" class="menu-item-theme">Другие полезные фунции</a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <section class="col-md-9 col-sm-8 main-text">
+                <div class="section-main">
+                    <h2>Калькулятор из любой системы счисления в десятичную</h2>
+                    <form oninput="result.value=parseInt(number.value,system.value)">
+                        <input type="text" name="number" placeholder="Число">
+                        в
+                        <input  type="text" name="system" class="system-style" placeholder="" onchange="findindex()">
+                        =
+                        <output name="result"></output><sub></sub>
+                        (в десятичной)
+                    </form>
+                    <h2>Калькулятор из десятичной в любую другую систему счисления</h2>
+                    <form oninput="ToStr(number2.value,system2.value)">
+                        <input type="text" name="number2" placeholder="Число">
+                        =
+                        <output name="result2" id="result2"></output><sub></sub>
+                        в
+                        <input  type="text" name="system2" class="system-style" placeholder="">
+                        - системе счисления
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <footer id="subfooter" class="clearfix">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                Днище сайта, здесь живет Елена Алексеевна<br>2021-2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
