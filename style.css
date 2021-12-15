@@ -94,7 +94,7 @@ h1{
 .no-cloak{
     color: red;
 }
-table, td, th{
+td, th{
     border: 1px solid;
 }
 .content-main.img{
