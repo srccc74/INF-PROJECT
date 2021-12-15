@@ -30,6 +30,7 @@ aside a:hover{
 .menu-level-2{
     font-weight: normal;
     margin-top: 10px;
+    padding-left: 0px;
 }
 .menu-item{
     padding: 7px;
@@ -116,3 +117,10 @@ table, td, th{
 .menu-item:hover {
     background-position: 0 100%;
   }
+img{
+    max-width: 100%;
+    height: auto;
+}
+table{
+    overflow-y: hidden;
+}
