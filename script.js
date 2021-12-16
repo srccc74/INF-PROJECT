@@ -20,4 +20,18 @@ function ToStr(a,cc){// Аргументы: число, система счис�
         return StrReverse(s);//Выводим результат задом наперед 
     }
 }
-
+function CheckAns(corans,userans){
+    a = document.getElementById(userans);
+    if (corans==a.value){
+        a.value="Правильно!"
+        a.style="color:green"
+    }
+    else{
+        a.value="Неправильно!"
+        a.style="color:red"
+    }
+}
+function ColorBack(userans){
+    a = document.getElementById(userans);
+    a.style="color:black"
+}

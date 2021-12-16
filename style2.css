@@ -45,7 +45,11 @@ aside a:hover{
 .navbar-brad{
     font-size: 24px;
 }
-
+button{
+    float: right;
+    margin: 20px;
+    margin-top: 30px;
+}
 .main-text{
     padding: 30px;
 }
@@ -59,7 +63,10 @@ aside a:hover{
     border: 1px solid #EAEAEA;
     
 }
-
+input{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 iframe{
     pointer-events: none;
 }
@@ -73,8 +80,15 @@ h1{
 .system-style{
     width: 40px;
 }
-#demo{
-    font-size: 24px;
+@media screen and (min-width:481px) {
+    .no-cloak{
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    .counter{
+        display: none;
+    }
 }
 
 .no-cloak{
@@ -109,9 +123,13 @@ img{
 }
 table{
     overflow-y: hidden;
+    overflow-x:auto;
 }
 button.task{
     margin: 0px;
+}
+.task{
+    margin-top: 100px;
 }
 @media screen and (max-width:510px) {
     .navbar-brad{
