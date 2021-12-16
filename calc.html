@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://uguide.ru/js/script/ok4.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://uguide.ru/js/script/snowcursor.min.js">  </script>  <style type="text/css">  body, a:hover {cursor: url(https://uguide.ru/js/script/snowcurser.cur), url(https://uguide.ru/js/script/snowcurser.png), auto !important;}  </style>
@@ -50,20 +50,20 @@
                 <div class="section-main">
                     <h2>Калькулятор из любой системы счисления в десятичную</h2>
                     <form oninput="result.value=parseInt(number.value,system.value)">
-                        <input type="text" name="number" placeholder="Число">
+                        <input style="margin: 20px;"type="text" name="number" placeholder="Число">
                         в
-                        <input  type="text" name="system" class="system-style" placeholder="" onchange="findindex()">
+                        <input style="margin: 20px;" type="text" name="system" class="system-style" placeholder="" onchange="findindex()">
                         =
                         <output name="result"></output><sub></sub>
                         (в десятичной)
                     </form>
                     <h2>Калькулятор из десятичной в любую другую систему счисления</h2>
                     <form oninput="ToStr(number2.value,system2.value)">
-                        <input type="text" name="number2" placeholder="Число">
+                        <input style="margin: 20px;" type="text" name="number2" placeholder="Число">
                         =
                         <output name="result2" id="result2"></output><sub></sub>
                         в
-                        <input  type="text" name="system2" class="system-style" placeholder="">
+                        <input style="margin: 20px;" type="text" name="system2" class="system-style" placeholder="">
                         - системе счисления
                     </form>
                 </div>
